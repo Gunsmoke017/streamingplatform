@@ -1,0 +1,630 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: calibri;
+    transition: 500ms;
+    animation: ease-in-out;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(9, 50, 48);
+}
+
+.navbar{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(9, 50, 48, 0.461);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 50px rgb(0,0,0);
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+.nav__left{
+    font-size: 30px;
+}
+
+.nav__right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.nav__right img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 300px;
+}
+
+.rightsmall{
+    display: none;
+}
+
+.nav__right a{
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav__right i{
+    color: gray;
+    text-decoration: none;
+}
+
+.welcomepanel{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://media.istockphoto.com/photos/movie-theater-during-the-screening-of-an-animated-movie-picture-id1355176914?b=1&k=20&m=1355176914&s=170667a&w=0&h=WeepjIiEeDLrh96JafSgOZd1eCIES5mwPO-FbHaWURk=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.welcomepanelwrp{
+    width: 100%;
+    height: 100%;
+    background-color: #12121288;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
+    ;
+}
+
+.welcomepanelwrp__left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomepanelwrp__left__title{
+    font-size: 50px;
+    text-shadow:0px 10px 5px #121212;
+}
+
+.welcomepanelwrp__left__addup{
+    font-size: 30px;
+    text-align: end;
+    text-shadow:0px 10px 5px #121212;
+}
+
+.welcomepanelwrp__left a{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(9, 50, 48);
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgb(24, 122, 117);
+}
+
+.welcomepanelwrp__left a:hover{
+    background-color: rgb(27, 130, 125);
+}
+
+.welcomepanelwrp__right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgba(9, 50, 48, 0.632),rgba(255, 255, 255, 0));
+    border: none;
+    width: 50%;
+    height: 100%;
+}
+
+.welcomepanelwrp__right__mat{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    /* background-color: aliceblue; */
+}
+
+.cardmat1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9lI7WsPKJqeCcMfuMBYFTHVOLDV7yw455hQ&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.cardmat2{
+    background-image: url(    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EE7FZHveAmPlzN9elauEo1HYEKQRHYjE8g&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.cardmat3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6Fj97H0gvH9a8_gjSlB2Qw6SbadILfZ3lw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.card1{
+    width: 200px;
+    height: 250px;
+    background-color: #1212123e;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #121212;
+   
+}
+.card2{
+    width: 220px;
+    height: 270px;
+    background-color: #12121262;
+    border-radius: 5px;
+    box-shadow: 0px 10px  5px #1212127d;
+    z-index: 10;
+}
+.card3{
+    width: 200px;
+    height: 250px;
+    background-color: #1212128b;
+    border-radius: 5px;
+    box-shadow: 0px 0px   5px #121212;
+    z-index: 0;
+}
+
+.movieholder{
+    background-color: rgb(0,0,0);
+    padding: 20px;
+    font-size: 30px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 5px rgb(0,0,0);
+}
+
+.movieholder__title{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    /* align-content: flex-start; */
+    text-align: start;
+    font-size: 40px;
+    text-shadow: 0px 0px 5px rgb(8, 121, 115);
+    margin-top: 30px;
+}
+
+.movieholder__movies{
+    width: 1220px;
+    height: 300px;
+    background-color: rgb(0,0,0);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 10px;
+    column-gap: 15px;
+}
+
+.movieholder__movies::-webkit-scrollbar{
+    width: 1px;
+}
+
+.movies_card{
+    padding: 5px;
+    font-size: 20px;
+    
+}
+
+.movies_card img{
+    width: 170px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+.movie__name{
+    display: flex;
+    justify-content: center;
+}
+
+.boxofficereleases__cards{
+    width: 250px;
+    height: 370px;
+    background-color: rgb(0,0,0);
+    position: relative;
+}
+
+.boxofficereleases__cards img{
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.boxofficereleases__cards__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* position: absolute;
+    bottom: 10px;
+    left: 20px; */
+    background-color: rgb(0,0,0);
+    padding: 5px;
+}
+
+.boxofficereleases{
+    width: 100%;
+    background-color: rgb(0,0,0);
+    padding: 20px;
+}
+
+.boxofficereleases__holder{
+    column-gap: 30px;
+}
+
+.boxofficereleases__title{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.boxofficereleases__holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watchlist{
+    background-color: rgb(9, 50, 48);
+    padding: 20px;
+    background: linear-gradient(to top right, rgb(0, 60, 128), rgb(0,0,0));
+    width: 100%;
+}
+
+.watchlist__title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow:0px 10px 5px #121212;
+
+}
+
+.watchlist__holder{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 10px 5px #1212128a;
+    border-radius: 20px;
+}
+
+.watchlist__row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.watchlist__row .one{
+    width: 30%;
+    background-color: rgb(0,0,0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.watch{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y: scroll;
+    height: 450px;
+    row-gap: 20px;
+}
+
+.watch::-webkit-scrollbar{
+    width: 1px;
+}
+
+.watch__card{
+    width: 200px;
+    height: 270px;
+    background-color: rgb(0,0,0);
+    font-size: 20px;
+}
+
+.watch__card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.watch__name{
+    padding: 5px;
+}
+
+.watchlist__row .two{
+    padding: 10px;
+    width: 70%;
+    background-color: rgb(0,0,0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+
+    
+}
+
+.summary{
+    color: grey;
+
+}
+
+.watchlist__row .two img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.watchlist__name{
+    font-size: 40px;
+}
+
+.watchlist__info{
+    color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+}
+
+
+.watchlist__details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.float__watch{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 10px;
+    background-color: rgb(0,0,0);
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.improvwatch{
+    display: none;
+}
+
+#first{
+    display: none;
+}
+
+@media screen and (max-width:550px){
+    .navbar{
+        position: sticky;
+        top: 0px;
+        /* right: 0px;
+        z-index: 30; */
+    }
+
+    .rightsmall{
+        display: contents;
+        align-items: center;
+        font-size: 15px;
+    }
+    .rightsmall i{
+        /* display: contents; */
+        font-size: 35px;
+    }
+
+    .nav__right{
+        display: none;
+    }
+
+    .welcomepanel{
+        width: 100%;
+        height: 300px;
+        background-image: url(https://media.istockphoto.com/photos/movie-theater-during-the-screening-of-an-animated-movie-picture-id1355176914?b=1&k=20&m=1355176914&s=170667a&w=0&h=WeepjIiEeDLrh96JafSgOZd1eCIES5mwPO-FbHaWURk=);
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+
+    .welcomepanelwrp{
+        display: flex;
+        /* width: 100%;
+        height: 100%;
+        background-color: #12121288;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* padding: 50px; */
+        flex-wrap: wrap;
+    }
+
+    .welcomepanelwrp__left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcomepanelwrp__left__title{
+        font-size: 30px;
+
+    }
+
+    .welcomepanelwrp__right{
+        display: none;
+    }
+
+    .movieholder__title{
+        font-size: 30px;
+    }
+
+    .movieholder__movies{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(0,0,0);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        overflow-x: scroll;
+        padding: 10px;
+        column-gap: 15px;
+    }
+
+    .boxofficereleases__title{
+        font-size: 30px;
+    }
+
+    .boxofficereleases__holder{
+        display: flex;
+        justify-content: start;
+        column-gap: 30px;
+        overflow: scroll;
+        width: 100%;
+
+    }
+
+    .boxofficereleases__cards img{
+        width: 200px;
+        height:300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .watchlist{
+        display: none;
+    }
+
+    #first{
+        font-size: 30px;
+        padding: 15px;
+        text-shadow: 0px 10px 15px rgb(0,0,0);
+    }
+
+    #sec{
+        width: 100%;
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+
+    .improvwatch{
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: rgb(0,0,0);
+
+    }
+
+    .improvwatch__top{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        overflow-x: scroll;
+        /* height: 250px; */
+        column-gap: 15px;
+
+    }
+
+    .improvwatch__top img{
+        width: 100px;
+        height: 130px;
+    }
+    .improvwatch__top img:nth-child(1){
+        width: 100px;
+        height: 130px;  
+    }
+
+    #pick{
+        box-shadow: 0px 0px 5px white;
+    }
+
+
+    .improvwatch__bottom{
+        width: 100%;
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* height: 250px; */
+        position: relative;
+
+    }
+
+    .improvwatch__bottom img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .improvwatch__name{
+        font-size: 20px;
+        margin-top: 10px;
+
+    }
+
+    .improvwatch__info{
+        color: gray;
+    }
+
+    .improvwatch__float__watch{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        padding: 5px;
+        background-color: rgb(0,0,0);
+    }
+
+    .improvwatch__info{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .improvwatch__details{
+        font-size: 13px;
+
+    }
+    
+    .bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0,0,0);
+        padding: 20px;
+        font-size: 20px;
+    }
+
+}
